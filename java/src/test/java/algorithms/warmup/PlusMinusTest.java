@@ -5,7 +5,7 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-import util.Util;
+import util.ParsingUtil;
 
 public class PlusMinusTest {
 
@@ -18,7 +18,7 @@ public class PlusMinusTest {
 
 	@Test
 	public void test2() {
-		int[] input = Util.splitToIntArr("-4 3 -9 0 4 1");
+		int[] input = ParsingUtil.splitToIntArr("-4 3 -9 0 4 1");
 		String[] output = {"0.500000", "0.333333", "0.166667"};
 		assertThat(PlusMinus.plusMinus(input), is(output));
 	}

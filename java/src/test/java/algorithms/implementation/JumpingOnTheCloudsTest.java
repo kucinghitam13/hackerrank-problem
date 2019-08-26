@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import util.Util;
+import util.ParsingUtil;
 
 public class JumpingOnTheCloudsTest {
 
@@ -26,7 +26,7 @@ public class JumpingOnTheCloudsTest {
 
 	@Test
 	public void test2() {
-		int[] c = Util.splitToIntArr("1 1 0 1 0 1 0 1 0 1 0 1 1 0 1 1 1 1 1");
+		int[] c = ParsingUtil.splitToIntArr("1 1 0 1 0 1 0 1 0 1 0 1 1 0 1 1 1 1 1");
 		int k = 19;
 		int expected = 97;
 		assertEquals(expected, JumpingOnTheClouds.jumpingOnClouds(c, k));
