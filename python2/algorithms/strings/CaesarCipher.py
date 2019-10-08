@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from string import digits, lowercase, punctuation
 
-k = input()
+k = 0
 def replace(c):
     characters = 'abcdefghijklmnopqrstuvwxyz'
     key = characters[k%26:] + characters[:k%26]
